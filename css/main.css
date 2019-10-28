@@ -1,8 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
   line-height: 1.5;
-
 }
 
 *, *::before, *::after {
@@ -21,21 +20,26 @@ header {
 .header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 img {
-  display: block;
+  display: inline-block;
   width: 40px;
 }
- h1 {
-   font-size: 2rem;
-   color: #fff;
- }
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+}
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
-  padding: .5em 0;
+  padding: .4rem .5rem;
   margin: 0;
 }
 
@@ -43,4 +47,8 @@ img {
   color: #fff;
   text-decoration: none;
   font-size: 1.125rem;
+}
+
+.nav a:hover {
+  background-color: #a63f38;
 }
